@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title><![CDATA[安装笔记]]></title>
+      <url>/2018/01/17/*%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>###brew安装：<br>地址：/usr/local/Cellar<br>–python2.7<br>–python3.5</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Mac安装Homebrew]]></title>
+      <url>/2018/01/17/Mac%E5%AE%89%E8%A3%85Homebrew/</url>
+      <content type="html"><![CDATA[<p>系统：Mac OS High Sierra 10.13.2</p>
+<p>  Mac上官配的python是python2.7，然而在学校的做课程设计的时候，因为要配置环境，电脑环境混乱，刷机后决定用homebrew重新安装python。</p>
+<p>安装方法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></table></figure>
+<p>Homebrew官网：<a href="https://brew.sh/" target="_blank" rel="noopener">https://brew.sh/</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>/2018/01/15/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
