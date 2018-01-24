@@ -3,9 +3,21 @@
   
     
     <entry>
+      <title></title>
+      <url>/2018/01/24/masscan%E6%BA%90%E7%A0%81%E8%B7%9F%E9%9A%8F%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<hr>
+<h2 id="title-masscan源码跟随笔记"><a href="#title-masscan源码跟随笔记" class="headerlink" title="title:masscan源码跟随笔记"></a>title:masscan源码跟随笔记</h2><p>###入口进入：<br>    masscan_command_line 命令行入口</p>
+<p>###头文件：<br>    masscan.h 定义Masscan，用于接收命令行参数</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[安装笔记]]></title>
       <url>/2018/01/17/*%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p>###brew安装：<br>地址：/usr/local/Cellar<br>–python2.7<br>–python3.5</p>
+      <content type="html"><![CDATA[<h4 id="brew安装："><a href="#brew安装：" class="headerlink" title="brew安装："></a>brew安装：</h4><p>地址：/usr/local/Cellar<br>–python2.7<br>–python3.5</p>
+<h4 id="git安装："><a href="#git安装：" class="headerlink" title="git安装："></a>git安装：</h4><p>地址：/Users/seventailcat/git_things<br>–masscan &amp; make</p>
 ]]></content>
       
         
@@ -16,9 +28,10 @@
       <url>/2018/01/17/Mac%E5%AE%89%E8%A3%85Homebrew/</url>
       <content type="html"><![CDATA[<p>系统：Mac OS High Sierra 10.13.2</p>
 <p>  Mac上官配的python是python2.7，然而在学校的做课程设计的时候，因为要配置环境，电脑环境混乱，刷机后决定用homebrew重新安装python。</p>
-<p>安装方法：</p>
+<p>####安装方法：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></table></figure>
 <p>Homebrew官网：<a href="https://brew.sh/" target="_blank" rel="noopener">https://brew.sh/</a></p>
+<p>####使用：<br>    安装：brew install wget</p>
 ]]></content>
       
         
