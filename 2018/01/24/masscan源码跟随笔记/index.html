@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="title:masscan源码跟随笔记###入口进入：    masscan_command_line 命令行入口 ###头文件：    masscan.h 定义Masscan，用于接收命令行参数">
+    <meta name="description" content="入口进入：masscan_command_line 命令行入口 头文件：masscan.h 定义Masscan，用于接收命令行参数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SevenTailCat">
+<meta property="og:title" content="masscan源码跟随笔记">
 <meta property="og:url" content="http://yoursite.com/2018/01/24/masscan源码跟随笔记/index.html">
 <meta property="og:site_name" content="SevenTailCat">
-<meta property="og:description" content="title:masscan源码跟随笔记###入口进入：    masscan_command_line 命令行入口 ###头文件：    masscan.h 定义Masscan，用于接收命令行参数">
-<meta property="og:updated_time" content="2018-01-24T09:01:33.223Z">
+<meta property="og:description" content="入口进入：masscan_command_line 命令行入口 头文件：masscan.h 定义Masscan，用于接收命令行参数">
+<meta property="og:updated_time" content="2018-02-03T08:56:49.116Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SevenTailCat">
-<meta name="twitter:description" content="title:masscan源码跟随笔记###入口进入：    masscan_command_line 命令行入口 ###头文件：    masscan.h 定义Masscan，用于接收命令行参数">
+<meta name="twitter:title" content="masscan源码跟随笔记">
+<meta name="twitter:description" content="入口进入：masscan_command_line 命令行入口 头文件：masscan.h 定义Masscan，用于接收命令行参数">
     
     
         
@@ -35,7 +35,7 @@
         
     
     <!-- title -->
-    <title>SevenTailCat</title>
+    <title>masscan源码跟随笔记</title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- rss -->
@@ -86,20 +86,20 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/01/24/masscan源码跟随笔记/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&text="><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&is_video=false&description="><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=&body=Check out this article: http://yoursite.com/2018/01/24/masscan源码跟随笔记/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&name=&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&text=masscan源码跟随笔记"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&is_video=false&description=masscan源码跟随笔记"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=masscan源码跟随笔记&body=Check out this article: http://yoursite.com/2018/01/24/masscan源码跟随笔记/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&name=masscan源码跟随笔记&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-masscan源码跟随笔记"><span class="toc-number">1.</span> <span class="toc-text">title:masscan源码跟随笔记</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#入口进入："><span class="toc-number">1.</span> <span class="toc-text">入口进入：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#头文件："><span class="toc-number">2.</span> <span class="toc-text">头文件：</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -111,7 +111,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        
+        masscan源码跟随笔记
     </h1>
 
 
@@ -133,10 +133,9 @@
   
 
   <div class="content" itemprop="articleBody">
-    <hr>
-<h2 id="title-masscan源码跟随笔记"><a href="#title-masscan源码跟随笔记" class="headerlink" title="title:masscan源码跟随笔记"></a>title:masscan源码跟随笔记</h2><p>###入口进入：<br>    masscan_command_line 命令行入口</p>
-<p>###头文件：<br>    masscan.h 定义Masscan，用于接收命令行参数</p>
-
+    <h3 id="入口进入："><a href="#入口进入：" class="headerlink" title="入口进入："></a>入口进入：</h3><pre><code>masscan_command_line 命令行入口
+</code></pre><h3 id="头文件："><a href="#头文件：" class="headerlink" title="头文件："></a>头文件：</h3><pre><code>masscan.h 定义Masscan，用于接收命令行参数
+</code></pre>
   </div>
 </article>
 
@@ -170,21 +169,21 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-masscan源码跟随笔记"><span class="toc-number">1.</span> <span class="toc-text">title:masscan源码跟随笔记</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#入口进入："><span class="toc-number">1.</span> <span class="toc-text">入口进入：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#头文件："><span class="toc-number">2.</span> <span class="toc-text">头文件：</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/01/24/masscan源码跟随笔记/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&text="><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&is_video=false&description="><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=&body=Check out this article: http://yoursite.com/2018/01/24/masscan源码跟随笔记/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title="><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&name=&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&text=masscan源码跟随笔记"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&is_video=false&description=masscan源码跟随笔记"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=masscan源码跟随笔记&body=Check out this article: http://yoursite.com/2018/01/24/masscan源码跟随笔记/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&title=masscan源码跟随笔记"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/01/24/masscan源码跟随笔记/&name=masscan源码跟随笔记&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
